@@ -29,5 +29,6 @@ message(STATUS
     BUILD_EXTRACTORS        Build map/dbc/vmap/mmap extractor
     BUILD_SCRIPTDEV         Build scriptdev. (Disable it to speedup build in dev mode by not including scripts)
     BUILD_PLAYERBOT         Build Playerbot mod
+.
 )
 message("")
