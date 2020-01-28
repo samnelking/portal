@@ -2388,7 +2388,7 @@ void PlayerbotAI::HandleBotOutgoingPacket(const WorldPacket& packet)
             if (gold > 0)
             {
                 WorldPacket* const packet = new WorldPacket(CMSG_LOOT_MONEY, 0);
-                m_bot->GetSession()->QueuePacket(std::move(std::make_unique<WorldPacket>(*packet)));
+                m_bot->GetSession()->QueuePacket(std::move(std::make_unique<WorldPacket>(* packet)));
             }
 
             for (uint8 i = 0; i < items; ++i)
